@@ -40,7 +40,24 @@ namespace cbtlPOS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox hvnTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox1.Checked)
+            {
+                hvnTb.Text = "Hot Vanilla SGL ₱145.00";
+            }
+            else if (checkBox2.Checked)
+            {
+                hvnTb.Text = "Hot Vanilla DBL ₱160.00";
+            }
+            else
+            {
+                hvnTb.Text = "Hot Vanilla SGL ₱145.00";
+            }
+
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
         }
 
         //Hot Choco//
@@ -66,7 +83,24 @@ namespace cbtlPOS
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox hchTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox3.Checked)
+            {
+                hchTb.Text = "Hot Choco SGL ₱145.00";
+            }
+            else if (checkBox4.Checked)
+            {
+                hchTb.Text = "Hot Choco DBL ₱160.00";
+            }
+            else
+            {
+                hchTb.Text = "Hot Choco SGL ₱145.00";
+            }
+
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
         }
     }
 }

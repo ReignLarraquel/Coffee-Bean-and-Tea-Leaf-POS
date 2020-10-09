@@ -74,7 +74,24 @@ namespace cbtlPOS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox tocTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox1.Checked)
+            {
+                tocTb.Text = "The Original Mocha SGL ₱165.00";
+            }
+            else if (checkBox2.Checked)
+            {
+                tocTb.Text = "The Original Mocha DBL ₱185.00";
+            }
+            else
+            {
+                tocTb.Text = "The Original Mocha SGL ₱165.00";
+            }
+
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
         }
 
         //The Original Vanilla//
@@ -115,7 +132,23 @@ namespace cbtlPOS
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox tovTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox3.Checked)
+            {
+                tovTb.Text = "The Original Vanilla SGL ₱165.00";
+            }
+            else if (checkBox4.Checked)
+            {
+                tovTb.Text = "The Original Vanilla DBL ₱185.00";
+            }
+            else
+            {
+                tovTb.Text = "The Original Vanilla SGL ₱165.00";
+            }
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
         }
 
         //Caramel//
@@ -155,7 +188,24 @@ namespace cbtlPOS
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox tocTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox5.Checked)
+            {
+                tocTb.Text = "Caramel SGL ₱180.00";
+            }
+            else if (checkBox6.Checked)
+            {
+                tocTb.Text = "Caramel DBL ₱200.00";
+            }
+            else
+            {
+                tocTb.Text = "Caramel SGL ₱180.00";
+            }
+
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
         }
 
         //Black Forest//
@@ -194,7 +244,24 @@ namespace cbtlPOS
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox blkTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox7.Checked)
+            {
+                blkTb.Text = "Black Forest SGL ₱180.00";
+            }
+            else if (checkBox8.Checked)
+            {
+                blkTb.Text = "Black Forest DBL ₱200.00";
+            }
+            else
+            {
+                blkTb.Text = "Black Forest SGL ₱180.00";
+            }
+
+            checkBox7.Checked = false;
+            checkBox8.Checked = false;
         }
 
         //Hazelnut Chocolate//
@@ -232,7 +299,24 @@ namespace cbtlPOS
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox hzlTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox9.Checked)
+            {
+                hzlTb.Text = "Hazelnut Chocolate SGL ₱180.00";
+            }
+            else if (checkBox10.Checked)
+            {
+                hzlTb.Text = "Hazelnut Chocolate DBL ₱200.00";
+            }
+            else
+            {
+                hzlTb.Text = "Hazelnut Chocolate SGL ₱180.00";
+            }
+
+            checkBox9.Checked = false;
+            checkBox10.Checked = false;
         }
 
     }

@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace cbtlPOS
 {
     public partial class espresso : UserControl
@@ -83,7 +84,26 @@ namespace cbtlPOS
 
         private void button1_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox espTb = parent.Controls["txtSelected"] as TextBox;
 
+
+            
+            if (checkBox1.Checked)
+            {
+                espTb.Text = "Espresso SGL ₱115.00";
+            }
+            else if (checkBox2.Checked) 
+            {
+                espTb.Text = "Espresso DBL ₱130.00";
+            }
+            else
+            {
+                espTb.Text = "Espresso SGL ₱115.00";
+            }
+
+            checkBox1.Checked = false;
+            checkBox2.Checked = false;
         }
 
         //Machiato//
@@ -138,7 +158,26 @@ namespace cbtlPOS
 
         private void button2_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox macTb = parent.Controls["txtSelected"] as TextBox;
 
+
+            
+            if (checkBox3.Checked)
+            {
+                macTb.Text = "Machiato SGL ₱125.00";
+            }
+            else if (checkBox4.Checked)
+            {
+                macTb.Text = "Machiato DBL ₱140.00";
+            }
+            else
+            {
+                macTb.Text = "Machiato SGL ₱125.00";
+            }
+
+            checkBox3.Checked = false;
+            checkBox4.Checked = false;
         }
 
         //Cappuccino//
@@ -193,7 +232,24 @@ namespace cbtlPOS
 
         private void button3_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox cupTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox5.Checked)
+            {
+                cupTb.Text = "Cappuccino SGL ₱135.00";
+            }
+            else if (checkBox6.Checked)
+            {
+                cupTb.Text = "Cappuccino DBL ₱150.00";
+            }
+            else
+            {
+                cupTb.Text = "Cappuccino SGL ₱135.00";
+            }
+
+            checkBox5.Checked = false;
+            checkBox6.Checked = false;
         }
 
         //Americano//
@@ -248,7 +304,24 @@ namespace cbtlPOS
 
         private void button4_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox ameTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox7.Checked)
+            {
+                ameTb.Text = "Americano SGL ₱135.00";
+            }
+            else if (checkBox8.Checked)
+            {
+                ameTb.Text = "Americano DBL ₱150.00";
+            }
+            else
+            {
+                ameTb.Text = "Americano SGL ₱135.00";
+            }
+
+            checkBox7.Checked = false;
+            checkBox8.Checked = false;
         }
 
         //Vanilla Latte//
@@ -303,7 +376,24 @@ namespace cbtlPOS
 
         private void button5_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox vanTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox9.Checked)
+            {
+                vanTb.Text = "Vanilla Latte SGL ₱165.00";
+            }
+            else if (checkBox10.Checked)
+            {
+                vanTb.Text = "Vanilla Latte DBL ₱180.00";
+            }
+            else
+            {
+                vanTb.Text = "Vanilla Latte SGL ₱165.00";
+            }
+
+            checkBox9.Checked = false;
+            checkBox10.Checked = false;
         }
 
         //Double Choco//
@@ -358,7 +448,23 @@ namespace cbtlPOS
 
         private void button6_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox vanTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox11.Checked)
+            {
+                vanTb.Text = "Vanilla Latte SGL ₱165.00";
+            }
+            else if (checkBox12.Checked)
+            {
+                vanTb.Text = "Vanilla Latte DBL ₱180.00";
+            }
+            {
+                vanTb.Text = "Vanilla Latte SGL ₱165.00";
+            }
+
+            checkBox11.Checked = false;
+            checkBox12.Checked = false;
         }
 
         //Caramel Machiato//
@@ -413,7 +519,24 @@ namespace cbtlPOS
 
         private void button7_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox carTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox13.Checked)
+            {
+                carTb.Text = "Caramel Machiato SGL ₱170.00";
+            }
+            else if (checkBox14.Checked)
+            {
+                carTb.Text = "Caramel Machiato DBL ₱185,00";
+            }
+            else
+            {
+                carTb.Text = "Caramel Machiato SGL ₱170.00";
+            }
+
+            checkBox13.Checked = false;
+            checkBox14.Checked = false;
         }
 
         //White Chocolate//
@@ -468,7 +591,24 @@ namespace cbtlPOS
 
         private void button8_Click(object sender, EventArgs e)
         {
+            Form parent = this.Parent as Form;
+            TextBox whiTb = parent.Controls["txtSelected"] as TextBox;
 
+            if (checkBox15.Checked)
+            {
+                whiTb.Text = "White Choco SGL ₱170.00";
+            }
+            else if (checkBox16.Checked)
+            {
+                whiTb.Text = "White Choco DBL ₱185.00";
+            }
+            else
+            {
+                whiTb.Text = "White Choco SGL ₱170.00";
+            }
+
+            checkBox15.Checked = false;
+            checkBox16.Checked = false;
         }
 
         //Hazelnut Chocolate//
@@ -522,6 +662,28 @@ namespace cbtlPOS
         }
 
         private void button9_Click(object sender, EventArgs e)
+        {
+            Form parent = this.Parent as Form;
+            TextBox hazTb = parent.Controls["txtSelected"] as TextBox;
+
+            if (checkBox17.Checked)
+            {
+                hazTb.Text = "Hazelnut Chocolate SGL ₱170.00";
+            }
+            else if (checkBox18.Checked)
+            {
+                hazTb.Text = "Hazelnut Chocolate DBL ₱185.00";
+            }
+            else
+            {
+                hazTb.Text = "Hazelnut Chocolate SGL ₱170.00";
+            }
+
+            checkBox17.Checked = false;
+            checkBox18.Checked = false;
+        }
+
+        private void espresso_Load(object sender, EventArgs e)
         {
 
         }
